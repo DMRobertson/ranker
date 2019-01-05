@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Ranker</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script defer type="text/javascript" src="script.js" ></script>
+	</head>
+<body>
+
+	<dialog id="entry" open>
+		<header><label for="data-entry">Enter your items to be ranked.</label></header>
+		<form method="dialog">
+			<textarea id="data-entry" rows="10" placeholder="One item per line.
+Duplicates and blank lines are ignored.">
+
+
+A
+C
+
+B
+  
+	
+
+B
+
+B 
+A
+ </textarea>
+			<nav><input type="submit" value="Next" /></nav>
+		</form>
+	</dialog>
+
+	<dialog id="preference">
+		<header>Which item is better?</header>
+		<form>
+			<input type="button" />
+			<input type="button" />
+		</form>
+	</dialog>
+
+	<dialog id="results">
+		<header>Your final results:</header>
+		<ol id="final-ranking"></ol>
+	</dialog>
+
+</body>
+</html>
